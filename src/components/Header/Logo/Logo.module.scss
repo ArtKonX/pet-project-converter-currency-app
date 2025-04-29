@@ -1,0 +1,40 @@
+@use '../../../styles-breakpoints/breakpoints.scss' as *;
+
+.logo-link {
+    background-image: url('../../../../public/gif/currency-fall.gif');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1s;
+
+    @include xs-breakpoint {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    &:hover {
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    }
+
+    &:focus {
+        outline: 2px solid black;
+    }
+
+    &__main-title {
+        color: green;
+        text-shadow: 2px 0 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255);
+    }
+
+    &__sub-title {
+        color: white;
+    }
+}

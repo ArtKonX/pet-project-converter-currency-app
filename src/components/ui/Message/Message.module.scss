@@ -1,0 +1,16 @@
+.message {
+    background-color: rgb(173, 201, 163);
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 50px;
+    font-weight: bold;
+
+    @media (prefers-color-scheme: dark) {
+        & {
+            background-color: rgb(136, 158, 127);
+        }
+    }
+}

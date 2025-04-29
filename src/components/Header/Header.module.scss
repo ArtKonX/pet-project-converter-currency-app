@@ -1,0 +1,32 @@
+@use '../../styles-breakpoints/breakpoints.scss' as *;
+
+.header-container {
+    background-color: rgb(173, 201, 163);
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 20px 0 0;
+
+    @media (prefers-color-scheme: dark) {
+        & {
+            background-color: rgb(136, 158, 127);
+        }
+    }
+
+    @include xs-breakpoint {
+        padding: 5px 20px;
+        margin-top: 20px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include xs-breakpoint {
+            flex-direction: column;
+            padding: 10px 0 30px;
+        }
+    }
+}

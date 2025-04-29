@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "currency": "RUB"
+    },
+    {
+        "id": 2,
+        "currency": "USD"
+    },
+    {
+        "id": 3,
+        "currency": "EUR"
+    },
+    {
+        "id": 4,
+        "currency": "GBP"
+    },
+    {
+        "id": 5,
+        "currency": "JPY"
+    }
+]

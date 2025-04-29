@@ -1,0 +1,41 @@
+@use '../../../../styles-breakpoints/breakpoints.scss' as *;
+
+.btn-select-currency {
+    font-size: 2rem;
+    background-color: rgb(173, 201, 163);
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 3px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+    @media (prefers-color-scheme: dark) {
+        & {
+            background-color: rgb(136, 158, 127);
+        }
+    }
+
+    @include xs-breakpoint {
+        font-size: 1.5rem;
+    }
+
+    &_disabled {
+        opacity: 0.6;
+        background-color: gray;
+        cursor: auto;
+    }
+
+    &_active {
+        color: green;
+    }
+
+    &:focus {
+        outline: 2px solid black;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

@@ -1,0 +1,18 @@
+@use '../../../styles-breakpoints/breakpoints.scss' as *;
+
+.result {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    @include xs-breakpoint {
+        font-size: 1.7rem;
+    }
+
+
+    &_error {
+        color: rgb(105, 0, 0);
+    }
+}

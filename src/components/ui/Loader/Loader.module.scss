@@ -1,0 +1,71 @@
+.preloader-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    background-color: rgb(173, 201, 163);
+
+    @media (prefers-color-scheme: dark) {
+        & {
+            background-color: rgb(136, 158, 127);
+        }
+    }
+
+    .preloader {
+        position: relative;
+        width: 30px;
+        height: 30px;
+    }
+
+    .preloader span {
+        border: 0;
+        margin: 0;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        border-radius: 50%;
+        animation: spin 2s ease infinite;
+    }
+
+    .preloader :first-child {
+        background: rgb(173, 201, 163);
+        animation-delay: -1.5s;
+    }
+
+    .preloader :nth-child(2) {
+        background: #000000;
+        animation-delay: -1s;
+    }
+
+    .preloader :nth-child(3) {
+        background: green;
+        animation-delay: -0.5s;
+    }
+
+    .preloader :last-child {
+        background: #5e5e5e;
+    }
+}
+
+@keyframes spin {
+
+    0%,
+    100% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(160%);
+    }
+
+    50% {
+        transform: translate(160%, 160%);
+    }
+
+    75% {
+        transform: translate(0, 160%);
+    }
+}

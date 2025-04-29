@@ -1,0 +1,28 @@
+@use '../../../../styles-breakpoints/breakpoints.scss' as *;
+
+.nav-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 1s;
+
+    @include xs-breakpoint {
+        font-size: 1.2rem;
+    }
+
+    &:focus {
+        outline: 2px solid black;
+    }
+
+    &:hover {
+        border: 1px solid white;
+    }
+}
+
+.active {
+    color: white;
+    background-color: green;
+}

@@ -1,0 +1,53 @@
+@use '../../../styles-breakpoints/breakpoints.scss' as *;
+
+.number-currency-label {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+
+    @include xs-breakpoint {
+        font-size: 2rem;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .number-currency {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 4px solid green;
+        font-size: 1.8rem;
+        max-width: 100px;
+        font-weight: bold;
+        height: 60px;
+        cursor: pointer;
+        transition: 1s;
+
+        @media (prefers-color-scheme: dark) {
+            & {
+                background-color: green;
+                border: 4px solid rgb(0, 70, 0);
+            }
+        }
+
+        @include xs-breakpoint {
+            max-width: 100%;
+            font-size: 1.7rem;
+            padding: 7px;
+            height: 50px;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:focus {
+            outline: 2px solid black;
+        }
+    }
+}
