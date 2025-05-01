@@ -115,9 +115,9 @@ export default function ConverterPage() {
     };
 
     const onRemove = (id: string) => {
-        dispatch(removeInHistory({ id }))
-        dispatch(removeItemInHistory({ id }))
-        dispatch(addOffSetHistory())
+        dispatch(removeInHistory({ id }));
+        dispatch(removeItemInHistory({ id }));
+        dispatch(addOffSetHistory());
     }
 
     const renderHistory = () => (

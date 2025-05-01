@@ -5,8 +5,10 @@ import { HistoryRemoveItemBtnProps } from '@/interfaces/converter/history-remove
 
 const HistoryRemoveItemBtn = ({text, id, onRemove}: HistoryRemoveItemBtnProps) => {
 
+    const handleClick = () => onRemove(id);
+
     return (
-        <button className={styles['btn-remove-item-history']} onClick={onRemove.bind(this, id)}>
+        <button className={styles['btn-remove-item-history']} onClick={handleClick}>
             {text}
         </button>
     )
