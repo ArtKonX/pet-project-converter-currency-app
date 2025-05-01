@@ -1,6 +1,6 @@
 .burger {
     width: 50px;
-    font-size: 4rem;
+    font-size: 3.7rem;
     color: black;
     display: flex;
     align-items: center;
@@ -8,6 +8,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+    top: 5px;
     transition: 1s;
 
     &:hover {
