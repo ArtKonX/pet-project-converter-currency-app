@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Copyright from './Copyright/Copyright';
 import styles from './Footer.module.scss';
 

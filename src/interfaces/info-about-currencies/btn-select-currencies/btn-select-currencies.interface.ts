@@ -4,8 +4,8 @@ interface DataAvailableCurrency {
 }
 
 export interface BtnsSelectCurrenciesProps {
-    disabled: boolean,
-    dataAvailableCurrencies: DataAvailableCurrency[]
+    dataAvailableCurrencies: DataAvailableCurrency[],
+    disabled: boolean
 }
 
 

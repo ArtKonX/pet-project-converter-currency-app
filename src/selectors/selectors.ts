@@ -10,3 +10,19 @@ export const selectConverter = createSelector(
         currency: converter.currency
     })
 );
+
+export const selectCurrencies = createSelector(
+    (state: RootState) => state.currenciesData,
+    (currenciesData) => ({
+        ...currenciesData,
+        currenciesData: currenciesData.currenciesDataAll
+    })
+);
+
+export const selectOffSet = createSelector(
+    (state: RootState) => state.offSet,
+    (offSet) => ({
+        ...offSet,
+        currenciesOffSetData: offSet.currenciesOffSetData
+    })
+);

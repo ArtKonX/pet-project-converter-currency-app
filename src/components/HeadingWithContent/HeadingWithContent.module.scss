@@ -1,6 +1,6 @@
 @use '../../styles-breakpoints/breakpoints.scss' as *;
 
-.main-content {
+.main-content, .history-content {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,0 +1,16 @@
+.burger {
+    width: 50px;
+    font-size: 4rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

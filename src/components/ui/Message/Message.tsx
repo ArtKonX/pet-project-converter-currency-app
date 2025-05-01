@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from './Message.module.scss';
 
 const Message = ({ text }: { text: string }) => {

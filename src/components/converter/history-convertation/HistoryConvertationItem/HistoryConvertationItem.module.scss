@@ -1,0 +1,68 @@
+@use '../../../../styles-breakpoints/breakpoints.scss' as *;
+
+.history-convertation-item {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border: 3px solid green;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 15px;
+
+    @media (prefers-color-scheme: dark) {
+        & {
+            color: white;
+        }
+    }
+
+    @include xs-breakpoint {
+        flex-direction: column;
+        align-items: start;
+        font-size: 2rem;
+    }
+
+    .dash {
+        @include xs-breakpoint {
+            margin-bottom: 10px;
+            align-self: center;
+        }
+    }
+
+    .first-currency {
+        &__currency-count {
+            margin-right: 10px;
+        }
+
+        @include xs-breakpoint {
+            margin-bottom: 10px;
+        }
+    }
+
+    .second-currency {
+        @include xs-breakpoint {
+            margin-bottom: 40px;
+        }
+    }
+
+    .price {
+        &__currency {
+            margin-left: 10px;
+        }
+
+        @include xs-breakpoint {
+            margin-bottom: 10px;
+            align-self: center;
+        }
+    }
+
+    .date {
+        @include xs-breakpoint {
+            align-self: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            font-weight: 200;
+        }
+    }
+}

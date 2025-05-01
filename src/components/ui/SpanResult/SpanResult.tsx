@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { SpanResultProps } from '@/interfaces/ui/span-result/span-result.interface';
 import styles from './SpanResult.module.scss';
 

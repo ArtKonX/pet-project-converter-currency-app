@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { BtnActionProps } from '@/interfaces/ui/btn-action/btn-action.interface';
 import styles from './BtnAction.module.scss';
 

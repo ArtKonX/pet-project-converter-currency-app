@@ -1,8 +1,10 @@
+import React from 'react';
+
 import { BtnsSelectCurrenciesProps } from '@/interfaces/info-about-currencies/btn-select-currencies/btn-select-currencies.interface';
 import BtnSelectCurrency from '../BtnSelectCurrency/BtnSelectCurrency';
 import styles from './BtnsSelectCurrencies.module.scss';
 
-const BtnsSelectCurrencies = ({ disabled, dataAvailableCurrencies }: BtnsSelectCurrenciesProps) => {
+const BtnsSelectCurrencies = ({ dataAvailableCurrencies, disabled }: BtnsSelectCurrenciesProps) => {
 
     return (
         <ul className={styles['list-btns-select-currencies']}>

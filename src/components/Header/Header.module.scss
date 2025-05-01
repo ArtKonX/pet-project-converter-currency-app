@@ -15,18 +15,57 @@
     }
 
     @include xs-breakpoint {
-        padding: 5px 20px;
+        padding: 0 20px;
         margin-top: 20px;
     }
 
     .header {
+        min-width: 100%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        .menu {
+           width: 100%;
+        }
+
+        .burger-and-menu-block {
+            display: none;
+        }
+
         @include xs-breakpoint {
-            flex-direction: column;
-            padding: 10px 0 30px;
+            padding: 15px 0 0;
+            align-items: baseline;
+
+            .menu {
+                display: none;
+            }
+
+            .burger-and-menu-block {
+                display: block;
+
+                .menu-container {
+                    display: flex;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    z-index: 1000;
+                    background-color: rgba(30, 39, 27, 0.95);
+                    width: 100%;
+                    height: 100%;
+                    // opacity: 0.95;
+
+                    .menu-block {
+                        position: relative;
+                        display: flex;
+                        margin-top: 70px;
+                        align-items: start;
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
         }
     }
 }

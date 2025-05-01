@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { CurrenciesListProps } from '@/interfaces/info-about-currencies/currencies-list/currencies-list.interface';
 import CurrencyElem from '../CurrencyElem/CurrencyElem';
 import styles from './CurrenciesList.module.scss';

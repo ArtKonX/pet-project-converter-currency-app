@@ -1,5 +1,7 @@
 'use client';
 
+import React from 'react';
+
 import styles from "../page.module.scss";
 
 import dataAvailableCurrencies from '@/data-app/data-about-currencies/data-available-currencies.json';

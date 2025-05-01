@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { MenuElemProps } from '@/interfaces/header/menu/menu.interface';
 import styles from './MenuElem.module.scss';
 

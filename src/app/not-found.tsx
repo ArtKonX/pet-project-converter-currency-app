@@ -1,5 +1,7 @@
 'use client';
 
+import React from 'react';
+
 import SpanResult from "@/components/ui/SpanResult/SpanResult";
 import styles from "./page.module.scss";
 import HeadingWithContent from "@/components/HeadingWithContent/HeadingWithContent";

@@ -1,0 +1,47 @@
+@use '../../../../styles-breakpoints/breakpoints.scss' as *;
+
+.btn-offset {
+    padding: 20px;
+    font-size: 1.5rem;
+    align-self: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid green;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 1s;
+
+    &:disabled {
+        cursor: auto;
+        opacity: 0.5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        & {
+            background-color: green;
+            border: 4px solid rgb(0, 70, 0);
+        }
+    }
+
+    @include xs-breakpoint {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    &:focus {
+        outline: 2px solid black;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

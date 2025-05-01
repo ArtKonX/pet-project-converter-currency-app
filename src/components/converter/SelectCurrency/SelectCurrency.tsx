@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { ChangeEvent } from 'react';
 import styles from './SelectCurrency.module.scss';
 import { SelectCurrencyProps } from '@/interfaces/converter/select-currency/select-currency.inteface';

@@ -1,3 +1,5 @@
+@use '../../../../styles-breakpoints/breakpoints.scss' as *;
+
 .currencies-list {
     width: 100%;
     display: flex;
@@ -9,6 +11,10 @@
     border-radius: 10px;
     background-color: rgb(173, 201, 163);
     color: white;
+
+    @include xs-breakpoint {
+        gap: 10px;
+    }
 
     @media (prefers-color-scheme: dark) {
         & {

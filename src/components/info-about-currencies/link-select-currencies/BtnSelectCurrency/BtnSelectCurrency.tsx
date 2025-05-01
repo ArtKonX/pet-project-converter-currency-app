@@ -1,5 +1,7 @@
 'use client'
 
+import React from 'react';
+
 import { useDispatch } from 'react-redux';
 import styles from './BtnSelectCurrency.module.scss';
 import { addBaseCurrency } from '@/redux/slices/converterSlice';
@@ -10,7 +12,7 @@ import { BtnSelectCurrencyProps } from '@/interfaces/info-about-currencies/btn-s
 
 import { useRouter } from 'next/navigation';
 
-const BtnSelectCurrency = ({ availableCurrency, disabled }: BtnSelectCurrencyProps) => {
+const BtnSelectCurrency = ({ disabled, availableCurrency }: BtnSelectCurrencyProps) => {
 
     const dispatch = useDispatch<AppDispatch>();
 

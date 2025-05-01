@@ -10,7 +10,8 @@
     transition: 1s;
 
     @include xs-breakpoint {
-        font-size: 1rem;
+        font-size: 1.4rem;
+        padding: 10px 15px;
     }
 
     &:focus {

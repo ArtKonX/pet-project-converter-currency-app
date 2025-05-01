@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { ChangeEvent } from 'react';
 import styles from './NumberInputCurrency.module.scss';
 import { NumberInputCurrencyProps } from '@/interfaces/converter/number-Input-currency/number-Input-currency.interface';

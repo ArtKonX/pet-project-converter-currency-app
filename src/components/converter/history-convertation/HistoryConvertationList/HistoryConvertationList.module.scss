@@ -1,0 +1,16 @@
+@use '../../../../styles-breakpoints/breakpoints.scss' as *;
+
+.history-convertation-list {
+    background-color: rgb(173, 201, 163);
+    list-style: none;
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 0;
+    border-radius: 10px;
+
+    @media (prefers-color-scheme: dark) {
+        & {
+            background-color: rgb(136, 158, 127);
+        }
+    }
+}

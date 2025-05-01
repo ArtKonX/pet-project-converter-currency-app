@@ -1,5 +1,7 @@
 'use client';
 
+import React from 'react';
+
 import TitleAboutUs from "@/components/about-us/TitleAboutUs/TitleAboutUs";
 import styles from "../page.module.scss";
 
@@ -26,7 +28,7 @@ export default function AboutUsPage() {
                             <ListAboutUs dataAboutUsList={data.list} />
                         </div>
                     ))}
-                    {[2, 3, 4].map((indx) => (<Fragment key={indx}><TextAboutUs text={dataAboutUs[indx].text} bolt={true} /></Fragment>))}
+                    {[2, 3, 4].map((indx) => (<Fragment key={indx}><TextAboutUs text={dataAboutUs[indx].text} bold={true} /></Fragment>))}
                 </div>
             </HeadingWithContent>
         </div>

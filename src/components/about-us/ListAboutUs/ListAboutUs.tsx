@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { ListAboutUsProps } from '@/interfaces/about-us/list-about-us/about-us-list.interface';
 import TextAboutUs from '../TextAboutUs/TextAboutUs';
 import styles from './ListAboutUs.module.scss';

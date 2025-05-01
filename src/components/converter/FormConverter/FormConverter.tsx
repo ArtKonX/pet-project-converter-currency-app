@@ -1,3 +1,5 @@
+import React from 'react';
+
 import NumberInputCurrency from '../NumberInputCurrency/NumberInputCurrency';
 import SelectCurrency from '../SelectCurrency/SelectCurrency';
 import styles from './FormConverter.module.scss';
