@@ -36,7 +36,9 @@ export const offSetSlice = createSliceWithThunk({
             }
         }),
         removeItemInHistory: create.reducer((state, action: PayloadAction<RemoveItemInHistoryActionPayload>) => {
-            state.currenciesOffSetData = state.currenciesDataAll.filter(item => item.id !== action.payload.id);
+            state.currenciesOffSetData = state.currenciesOffSetData.filter(item => item.id !== action.payload.id);
+            state.currenciesDataAll = state.currenciesDataAll.filter(item => item.id !== action.payload.id);
+
             state.offset += 1;
         }),
         addOffset: create.reducer((state) => {
@@ -47,7 +49,7 @@ export const offSetSlice = createSliceWithThunk({
 
             state.loading = true;
 
-            const newItems = state.currenciesDataAll.slice(state.currenciesOffSetData.length + 1, state.offset);
+            const newItems = state.currenciesDataAll.slice(state.currenciesOffSetData.length, state.offset + 1);
 
             const uniqueItems = removeDuplicates([...state.currenciesOffSetData, ...newItems]);
             state.currenciesOffSetData = uniqueItems;
