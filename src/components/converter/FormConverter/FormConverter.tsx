@@ -6,7 +6,9 @@ import styles from './FormConverter.module.scss';
 import BtnAction from '../../ui/BtnAction/BtnAction';
 import { FormConverterProps } from '@/interfaces/converter/form-converter/form-converter.interface';
 
-const FormConverter = ({ converterData, setConverterData, onConvert, availableCurrencies }: FormConverterProps) => {
+const FormConverter = ({ ...props }: FormConverterProps) => {
+
+    const { converterData, setConverterData, onConvert, availableCurrencies } = props;
 
     return (
         <form className={styles['form-converter']} onSubmit={onConvert}>
@@ -30,7 +32,7 @@ const FormConverter = ({ converterData, setConverterData, onConvert, availableCu
                 selectCurrencyText='Валюта:'
                 dataSelectCurrency={availableCurrencies.filter(currency => currency.currency !== converterData.firstCurrency)}
             />
-            <BtnAction text='OK' nameClass='btn-submit' action='submit'/>
+            <BtnAction text='OK' nameClass='btn-submit' action='submit' />
         </form>
     )
 }

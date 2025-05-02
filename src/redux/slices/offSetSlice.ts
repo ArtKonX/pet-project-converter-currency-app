@@ -49,7 +49,7 @@ export const offSetSlice = createSliceWithThunk({
 
             state.loading = true;
 
-            const newItems = state.currenciesDataAll.slice(state.currenciesOffSetData.length, state.offset + 1);
+            const newItems = state.currenciesDataAll.slice(state.currenciesOffSetData.length, state.offset);
 
             const uniqueItems = removeDuplicates([...state.currenciesOffSetData, ...newItems]);
             state.currenciesOffSetData = uniqueItems;
@@ -58,6 +58,10 @@ export const offSetSlice = createSliceWithThunk({
             state.loading = false;
 
             if (state.currenciesDataAll.length <= (state.offset)) {
+                state.isMore = false;
+            }
+
+            if (state.currenciesDataAll.length === state.currenciesOffSetData.length ) {
                 state.isMore = false;
             }
         }),
